@@ -3,9 +3,10 @@ jdk:
   - openjdk8
   - oraclejdk8
 
+sudo: false
+
 script:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - mvn test -B
+   - mvn clean verify
 
 notifications:
   email:ekremkurt_fb@hotmail.com
